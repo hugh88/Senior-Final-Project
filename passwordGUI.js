@@ -8,7 +8,7 @@ function getString(){
         output: process.stdout
     });
 
-    password.question("Set new password", function(str){
+    password.question("Choose a password", function(str){
         let passesAllChecks = true;
 
         //Conditional Statements here.
@@ -20,7 +20,7 @@ function getString(){
             getString();
         }
         else{
-            console.log("\nPassword is acceptible\n");
+            console.log("\nThis password fits all the requirements\n");
             password.close();
         }
     });
